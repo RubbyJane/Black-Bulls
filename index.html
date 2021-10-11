@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2b60a4aa3.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,11 +15,17 @@
     <div class="container">
         <div class="header">
             <img src="../rubby-landing page/cloverrr.png" alt="">
-            <div class="links">
-                <a href="">HOME</a>
-                <a href="">CHARACTERS</a>
-                <a href="">CONTACT</a>
+            <div class="contain">
+                <div class="links" id="lnks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <a href="">HOME</a>
+                    <a href="">CHARACTERS</a>
+                    <a href="">CONTACT</a>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
             </div>
+            
+            
         </div>
         <div class="hero">
             <h1>BLACK CLOVER</h1>
@@ -24,11 +35,11 @@
             
         </div>
         <div class="information">
-            <img src="https://github.com/RubbyJane/Black-Bulls/blob/de991ed7d8a1d16c03ed9d35daf0faf82e8c667b/images/black.png" alt="" class="clover">
+            <img src="../rubby-landing page/black.png" alt="" class="clover">
             <div class="images">
-                <img src="https://images2.alphacoders.com/910/thumb-1920-910289.jpg" alt="">
-                <img src="https://wallpaperaccess.com/full/2410758.png" alt="">
-                <img src="https://c4.wallpaperflare.com/wallpaper/438/158/384/noelle-silva-black-clover-valkyrie-pandd-black-bullet-anime-girls-hd-wallpaper-preview.jpg" alt="">
+                <img src="https://images2.alphacoders.com/910/thumb-1920-910289.jpg" alt="" class="asta1">
+                <img src="https://wallpaperaccess.com/full/2410758.png" alt="" class="yuno1">
+                <img src="https://c4.wallpaperflare.com/wallpaper/438/158/384/noelle-silva-black-clover-valkyrie-pandd-black-bullet-anime-girls-hd-wallpaper-preview.jpg" alt="" class="noelle1">
             </div>
             <div class="asta">
                 <p><strong>Asta (アスタ, Asuta)</strong>  is the main protagonist of Black Clover. He is an orphan who was left under the care of a church by his mother during his infancy. He has high aspirations of becoming the next Wizard King. He possesses no magical power, but he overcame his weakness by increasing his physical strength, which allowed him to join the Magic Knight Squad known as the Black Bulls after acquiring a five-leaf clover grimoire where the Anti-Magic devil Liebe resides.</p>
@@ -58,6 +69,18 @@
             <p>Copyright © The Odin Project 2021</p>
         </div>
     </div>
+
+    
+<!------JavaScript for Toggle Menu---->
+<script>
+    var lnks = document.getElementById('lnks')
+    function showMenu(){
+        lnks.style.right="0px"
+    }
+    function hideMenu(){
+        lnks.style.right="-200px"
+    }
+</script>
     
 </body>
 </html>
