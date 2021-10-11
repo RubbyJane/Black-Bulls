@@ -136,6 +136,9 @@ body{
     right: 2.25in;
 }
 
+.discription{
+    display: flex;
+}
 .images img{
     height: auto;
     width: 3in;
@@ -207,9 +210,15 @@ body{
     
 }
 
+.contain .fas{
+    display: none;
+}
 
 
-@media screen and (max-width: 1200px) and (min-width:480px) {
+
+
+
+/*@media screen and (max-width: 1200px) and (min-width:480px) {
     .header img, .hero h1, .hero p, .hero button{
         left: 1in;
     }
@@ -265,5 +274,163 @@ body{
 
 
    
+}*/
+
+@media screen and (max-width: 1200px) and (min-width:450px){
+    .links a{
+        display: block;
+        padding: 10px;
+    }
+    .links{
+        position: absolute;
+        background: grey;
+        height: 650px;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    
+    .contain .fas{
+        display: block;
+        color: white;
+        margin: 20px;
+        font-size: 22px;
+        cursor: pointer;
+        
+    }
+
+    .contain .fa-bars{
+        position: absolute;
+        right: 0;
+    }
+
+    .header img{
+        position: absolute;
+        left: 0.2in;
+        top: 0.2in;
+    }
+    .hero h1{
+        position: absolute;
+        top: 0;
+    }
+
+    
+
+    .hero{
+        height: 550px;
+
+    }
+
+    .hero img{
+        position: absolute;
+        height: auto;
+        width: 5in;
+        left: 1.2in;
+        top: 1.5in;
+    }
+
+    .hero p{
+        top: 4.5in;
+        left: 1.2in;
+    }
+
+    .hero button{
+        top: 6in;
+        left: 1.2in;
+    }
+
+    .images{
+        flex-direction: column;
+    }
+    .information{
+        height: 1800px;
+    }
+    .information .clover{
+        position: absolute;
+        left: 2.3in;
+    }
+    .images img{
+        height: auto;
+        width: 6in;
+
+    }
+
+    .asta1{
+        position: absolute;
+        left: -4.5in;
+        top: 1.3in;
+    }
+
+    .yuno1{
+        position:absolute;
+        top: 7in;
+        left: -4.5in;
+    }
+
+    .noelle1{
+        position: absolute;
+        left: -4.5in;
+        top: 13.5in;
+    }
+    .information .asta{
+        position: absolute;
+        width: 5.9in;
+        left: 0.7in;
+        margin-top: 5in;
+        
+    }
+
+    .information .yuno{
+        position: absolute;
+        width: 5.9in;
+        left: 0.7in;
+        margin-top: 11.2in;
+        
+    
+    }
+    
+    .information .noelle{
+        position: absolute;
+        width: 5.9in;
+        left: 0.7in;
+        margin-top: 17.2in;
+        
+    }
+
+    .quote p{
+        font-size: 20px;
+        width: 5in;
+    }
+    .quote{
+        height: 300px;
+    }
+
+    .call-to-action  .back{
+        width: 4.5in;
+        left: 0.7in;
+        padding-left: 0.5in;
+
+    }
+
+    .back button{
+        width: 1in;
+        position: absolute;
+        right: 0.5in;
+        top: 0.3in;
+    }
+    .back p{
+        width: 4in;
+    }
+
+    
+
+
+
+   
 }
+
+
     
